@@ -1,0 +1,47 @@
+body {
+  color: #000;
+  background: #fff;
+  font-size: 11px;
+  height: auto;
+  padding-bottom: 20px;
+  margin: 0px auto;
+  width: 960px;
+  
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #000;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+p {
+  border: 1px solid #666;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer {
+
+	text-align: center;
+	margin-top: 30px;
+}
