@@ -1,20 +1,26 @@
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
   margin: 0px;
   padding: 0px;
   line-height: 1.5em;
   font-family: Arial;
   font-size: 14px;
-  background: url(../images/background_03.jpg) 0px 0px; }
+  background: url(../images/background_03.jpg) 0px 0px;
+  background-position: center; }
 
 .page {
   max-width: 980px;
   margin: 0px auto;
   position: relative;
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 header {
   height: 275px;
-  background: url(../images/banner.jpg) no-repeat right 0px; }
+  background: url(../images/banner.jpg) no-repeat right 0px;
+  background-position: center; }
 
 h1 {
   color: #a6430a;
@@ -43,10 +49,17 @@ nav a:hover {
 article {
   padding: 80px 20px 10px 20px; }
 
+img {
+  padding: 0;
+  margin: 0; }
+
 .img_container {
-  padding: 30px 20px 10px 20px; }
+  margin: 30px 20px 0px 20px; }
   .img_container img {
-    width: 310px; }
+    width: 32.8%;
+    padding: 0px 0px 0px 0px;
+    margin: 0.25% 0.25% 0.25% 0.25%;
+    float: left; }
 
 p {
   margin: 0px 0px .75em 0px; }
@@ -54,4 +67,5 @@ p {
 footer {
   font-size: .85em;
   color: #555;
-  padding: 10px 10px 10px 20px; }
+  padding: 10px 10px 10px 20px;
+  clear: left; }
