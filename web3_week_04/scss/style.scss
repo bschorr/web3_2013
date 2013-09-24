@@ -1,0 +1,13 @@
+// finally
+#something {
+	width:((500/1024)*100%);
+	height:500px;
+
+	a {
+		background:lime;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
