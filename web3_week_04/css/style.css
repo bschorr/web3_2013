@@ -32,7 +32,8 @@ nav {
   width: 100%;
   display: block;
   position: absolute;
-  background-color: #a6430a; }
+  background-color: #a6430a;
+  top: 275px; }
 
 nav a {
   color: #f5a06e;
@@ -54,7 +55,7 @@ img {
   margin: 0; }
 
 .img_container {
-  margin: 30px 20px 0px 20px; }
+  margin: 15px 20px 0px 20px; }
   .img_container img {
     width: 32.8%;
     padding: 0px 0px 0px 0px;
