@@ -61,15 +61,6 @@ article {
 	padding: 80px 20px 10px 20px; 
 }
 
-
-img {
-
-	padding: 0;
-	margin: 0;
-}
-
-
-
 .img_container {
 	margin: 15px 20px 0px 20px;
 
@@ -96,3 +87,16 @@ footer {
 	clear: left;
 }
 
+@media only screen 
+and (min-width : 500px) 
+and (max-width : 800px)
+{
+@import "medium_screen";
+}
+
+@media only screen 
+and (min-width : 30px)
+and (max-width : 500px)
+{
+@import "small_screen";
+}
