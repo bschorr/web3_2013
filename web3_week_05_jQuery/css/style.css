@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5em;
+  font-family: Arial;
+  font-size: 14px;
+  background: url(../images/background_03.jpg) 0px 0px;
+  background-position: center; }
+
+.page {
+  max-width: 980px;
+  margin: 0px auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+header {
+  height: 275px;
+  background: url(../images/banner.jpg) no-repeat right 0px;
+  background-position: center; }
+
+h1 {
+  color: #a6430a;
+  margin: 0em 0em .5em 0em;
+  font-size: 2em;
+  font-weight: normal; }
+
+nav {
+  width: 100%;
+  display: block;
+  position: absolute;
+  background-color: #a6430a;
+  top: 275px; }
+
+nav a {
+  color: #f5a06e;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: .9em;
+  margin: 12px 0px 10px 20px; }
+
+nav a:hover {
+  color: #fff; }
+
+article {
+  padding: 80px 20px 10px 20px; }
+
+.img_container {
+  margin: 15px 20px 0px 20px; }
+  .img_container img {
+    width: 32.8%;
+    padding: 0px 0px 0px 0px;
+    margin: 0.25% 0.25% 0.25% 0.25%;
+    float: left; }
+
+p {
+  margin: 0px 0px .75em 0px; }
+
+footer {
+  font-size: .85em;
+  color: #555;
+  padding: 10px 10px 10px 20px;
+  clear: left; }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  header {
+    height: 200px;
+    background-position: top; }
+
+  nav {
+    top: 200px; }
+
+  nav a {
+    margin-right: 20px; }
+
+  .img_container img {
+    width: 49.2%;
+    margin: 0.25% 0.25% 0.25% 0.25%;
+    float: left; } }
+@media only screen and (min-width: 30px) and (max-width: 500px) {
+  header {
+    height: 75px;
+    background: url(../images/banner_small.jpg) no-repeat center 0px; }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2em; }
+
+  article {
+    padding: 20px 20px 10px 20px; }
+
+  nav {
+    display: block;
+    position: static;
+    padding: 10px 0px 10px 0px; }
+
+  nav a {
+    display: block;
+    margin: 15px;
+    padding: 9px;
+    border: 1px solid;
+    border-radius: 12px; }
+
+  .img_container {
+    display: none; }
+
+  footer {
+    font-size: .85em;
+    color: #f5a06e;
+    background-color: #a6430a;
+    padding: 5px 5px 5px 20px;
+    clear: left;
+    border-top: 1px solid; } }

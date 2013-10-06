@@ -1,0 +1,70 @@
+/* Dropdown Menus */
+/* drop menu */
+.nav_menu .dropmenu {
+  color: #f5a06e;
+  display: none;
+  /* displays after menu load */
+}
+
+.nav_menu ul.dropmenu li:hover {
+  background-color: #d46220;
+}
+
+.nav_menu ul.dropmenu li.selected {
+  background-color: #700203;
+}
+
+.nav_menu ul.dropmenu li.selected a {
+  color: #ffd200;
+}
+
+/* topitems */
+.nav_menu ul.dropmenu a.toplevel {
+  margin: 12px 20px 10px 20px;
+}
+
+.nav_menu ul.dropmenu a.toplevel.hover {
+  color: #fff;
+}
+
+.nav_menu ul.dropmenu a.toplevel.selected {
+  color: #f5a06e;
+}
+
+/* subitems */
+.nav_menu ul.dropmenu li ul {
+  background-color: #a6430a;
+  border-top: 1px solid #fff;
+}
+
+.nav_menu ul.dropmenu li ul li a.sublevel {
+  color: #f5a06e;
+  width: 150px;
+  padding: 5px 5px 5px 20px;
+  margin: 0px;
+}
+
+.nav_menu ul.dropmenu li ul li a.sublevel.hover {
+  color: #fff;
+  background-color: #d46220;
+}
+
+.nav_menu ul.dropmenu li ul li a.sublevel.selected {
+  color: #a6430a;
+}
+
+/* sub subitems */
+.nav_menu ul.dropmenu li ul ul {
+  left: -10px;
+  border: none;
+  border-left: 1px solid #fff;
+}
+
+/* Sub Menu Indicators */
+.nav_menu ul.dropmenu a.indicator {
+  background: url(../images/arrow_right.gif) no-repeat right 50%;
+}
+
+.nav_menu ul.dropmenu a.toplevel.indicator {
+  background: none;
+}
