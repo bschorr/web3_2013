@@ -12,7 +12,6 @@
 					//Canvas size adjustment for Chrome and Firefox
 					var ratio;
 
-					//Particles
 					var squares;			//Array of particles
 					var counter;
 					var trueCounter;
