@@ -14,7 +14,8 @@ body {
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden; }
 
 header {
   background-position: center; }
@@ -57,11 +58,17 @@ nav a:hover {
   height: 232.5px;
   margin-top: 10px;
   max-width: 475px; }
+  .w2 img {
+    width: 100%;
+    float: left; }
 
 .w3 {
   height: 232.5px;
   width: 232.5px;
   margin-top: 10px; }
+  .w3 img {
+    width: 100%;
+    float: left; }
 
 .gutter-sizer {
   width: 10px; }
@@ -104,10 +111,23 @@ p {
 
 @media only screen and (min-width: 30px) and (max-width: 475px) {
   .item {
-    width: 100%; }
+    width: 100%;
+    display: block; }
 
   .w2 {
     width: 100%; }
 
   .w3 {
-    width: 100%; } }
+    width: 100%; }
+
+  .project_title {
+    margin: 0 0 0 0;
+    padding: 10 0 0 10;
+    position: static;
+    display: block;
+    clear: both; }
+
+  img {
+    position: static;
+    clear: both;
+    display: block; } }

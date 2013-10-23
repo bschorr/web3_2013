@@ -17,6 +17,7 @@ body {
 	padding: 20px;
 	position: relative; 
 	background-color: rgba(255, 255, 255, 0.9);
+	overflow: hidden;
 	//opacity: 0.95;
 }
 
@@ -81,12 +82,22 @@ nav a:hover {
 	height: 232.5px;
 	margin-top: 10px;
 	max-width: 475px;
+
+	img {
+		width: 100%;
+		float: left;
+	}
 }
 
 .w3 {
 	height: 232.5px;
 	width: 232.5px;
 	margin-top: 10px;
+
+	img {
+		width: 100%;
+		float: left;
+	}
 }
 
 .gutter-sizer {
@@ -143,6 +154,6 @@ p {
 and (min-width : 30px)
 and (max-width : 475px)
 {
-@import "small_screen";
+@import "medium_screen";
 }
 

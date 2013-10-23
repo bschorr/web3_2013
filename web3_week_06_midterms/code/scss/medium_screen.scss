@@ -1,4 +1,68 @@
-.page {
-	max-width: 718px;
-	margin: 0 auto;
+// .item {
+// 	width: 100%;
+// 	//overflow: auto;
+// 	display: block;
+// 	height: 100%;
+// 	margin: 0 0 0 0 ;
+// 	padding: 0 0 0 0;
+// 	//clear:both;
+
+// 	img {
+// 		display: block;
+// 	}
+// }
+
+// .w2 {
+// 	width: 100%;
+// 	display: block;
+// 	height: 100%;
+// 	margin: 0 0 0 0 ;
+// 	padding: 0 0 0 0;
+// }
+
+// .w3 {
+// 	width: 100%;
+// 	display: block;
+// 	height: 100%;
+// 	margin: 0 0 0 0 ;
+// 	padding: 0 0 0 0;
+// }
+
+// .project_title {
+// 	//position: static;
+// 	//display: block;
+// 	//clear: both;
+// 	//width: inherit;
+// 	//margin-top: 100%;
+// 	margin: 0 0 0 0 ;
+// 	padding: 0 0 0 0;
+// }
+
+.item {
+	width: 100%;
+	display: block;
+	//height: 100%;
+}
+
+.w2 {
+	width: 100%;
+}
+
+.w3 {
+	width: 100%;
+}
+
+.project_title {
+	margin: 0 0 0 0;
+	padding: 10 0 0 10;
+	position: static;
+	display: block;
+	clear:both;
+}
+
+img {
+
+	position: static;
+	clear: both;
+	display: block;
 }
