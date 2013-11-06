@@ -1,2 +1,13 @@
 .item {
+  width: 100%;
+  overflow: visible;
+  display: block; }
+
+.w2 {
   width: 100%; }
+
+.w3 {
+  width: 100%; }
+
+.project_title {
+  position: static; }
