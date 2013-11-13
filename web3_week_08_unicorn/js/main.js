@@ -25,6 +25,8 @@
 					unicornFlippedImg.src = 'unicorn_flipped.png';
 					var cloud = new Image();
 					cloud.src = 'cloud.png';
+					var imgToDraw = new Image();
+					imgToDraw = unicornImg;
 
 
 					/*---------- FUNCTIONS ----------*/
@@ -138,7 +140,7 @@
 
 						}
 
-						if( unicornXcounter%24 === 0 ){
+						if( unicornXcounter%48 === 0 ){
 
 							var tempCloud = new Cloud();
 							cList.push (tempCloud);
@@ -162,7 +164,7 @@
 							}
 						}
 
-						var imgToDraw = new Image();
+						//var imgToDraw = new Image();
 
 						if (prevUnicornX - unicornX > 0 ) imgToDraw = unicornImg;
 						if (prevUnicornX - unicornX < 0 ) imgToDraw = unicornFlippedImg;

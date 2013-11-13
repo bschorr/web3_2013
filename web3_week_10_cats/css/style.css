@@ -1,0 +1,52 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.page {
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 0 20 10;
+}
+
+.item {
+	margin-top: 10px;
+	width: 315px;
+	margin-right: 10px;
+}
+
+.gutter-sizer {
+	width: 10px;
+}
+
+form {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+h1 {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10 0 10 0;
+}
+
+#submit {
+    background-color: #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+    border:none;
+    font-size: 14px;
+    height: 24px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', arial, sans-serif;
+
+}
