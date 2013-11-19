@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Get my feed in JSON!</title>
+<style type="text/css">
+div { padding: 10px; }
+</style>
+<meta charset="UTF-8">
+</head>
+<body>
+<div id="fb-root"></div>
+<script type="text/javascript">
+  // I probably don't want to use globals, but this is just example code
+  var fbAppId = '397345230369131';
+
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : fbAppId, // App ID
+      status     : true,    // check login status
+      cookie     : true,    // enable cookies to allow the
+                            // server to access the session
+      xfbml      : true     // parse page for xfbml or html5
+                            // social plugins like login button below
+    });
+
+    // Put additional init code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+  /*
+  This function makes a call to the news feed of the user.
+  https://developers.facebook.com/docs/graph-api/reference/user/#home
+  */
+
+  function showMyFeed() {
+    var info = FB.getAuthResponse();
+    var userID = '/' + info ['userID'] + '/home';
+    console.log (userID);
+
+    FB.api(
+    userID,
+    function (response) {
+      if (response && !response.error) {
+        console.log (response);
+        var feed = JSON.stringify(response, null, '\t');
+        document.getElementById('result').innerHTML = feed;
+        }
+      }
+    );
+  }
+
+</script>
+
+<!--
+  Login Button
+
+  https://developers.facebook.com/docs/reference/plugins/login
+
+  This example needs the 'read_stream' permission in
+  order to read their news feed.  The scope parameter below
+  is what prompts the user for that permission.
+-->
+
+<div
+  class="fb-login-button"
+  data-show-faces="true"
+  data-width="200"
+  data-max-rows="1"
+  data-scope="read_stream">
+</div>
+
+<div>
+<input
+  type="button"
+  value="Print my news feed to this page"
+  onclick="showMyFeed();">
+</div>
+
+<pre id="result"></pre>
+
+</body>
+</html>
